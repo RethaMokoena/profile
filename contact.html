@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rethabile Mokoena - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-code"></i>
+            <span class="logo-text">Rethabile Mokoena</span>
+        </a>
+        <nav class="navbar">
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+
+            <!-- Direct contact info -->
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> 
+                    <a href="mailto:rmokoena1909@gmail.com">rmokoena1909@gmail.com</a>
+                </p>               <p><i class="fas fa-phone"></i> 
+                    <a href="tel:+27632110850">+27 63 211 0850</a>
+                </p>
+            </div>
+        <div class="content">
+            <h1>Contact Me</h1>
+            <p>Interested in collaborating or have a project in mind? Feel free to reach out!</p>
+
+            <!-- Updated Formspree Form -->
+            <form action="https://formspree.io/f/mdkwgvaw" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+
+        
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rethabile-mokoena"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/RethaMokoena"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
