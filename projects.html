@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rethabile Mokoena - Projects</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="projects.css">
 </head>
@@ -17,48 +18,55 @@
             <div class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="coursework.html" class="active">Coursework</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
         </nav>
     </header>
 
-    <section class="projects" id="projects">
-        <div class="content">
-            <h1>My Projects</h1>
-            <p>Here are some of the projects I’ve worked on, showcasing my skills in web development and design.</p>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript, featuring modern animations and a sleek design.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
-                        <a href="https://github.com/RethaMokoena/portfolio" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Task Manager App</h3>
-                    <p>A dynamic web application for managing tasks, built with React and styled with Tailwind CSS, featuring local storage for persistence.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
-                        <a href="https://github.com/RethaMokoena/task-manager" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>E-Commerce Landing Page</h3>
-                    <p>A visually appealing landing page for an e-commerce platform, built with HTML, CSS, and JavaScript, with a focus on UI/UX.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
-                        <a href="https://github.com/RethaMokoena/ecommerce-landing" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
-                    </div>
+ <section class="projects" id="projects">
+    <div class="content">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I’ve worked on, showcasing my skills in backend engineering, full-stack development, and applied machine learning.</p>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Future Feed</h3>
+                <p>A large-scale social feed platform developed as part of the COS 301 Capstone Project with EPI-USE Labs. I was a backend developer who built a scalable backend in Java Spring Boot with PostgreSQL,used AWS to host our backend, and WebSockets. Implemented REST APIs and a rule-based feed system for personalized AI-driven content delivery.
+                    Check out the live deployment <a href="https://future-feed.vercel.app/" style="color: cyan;">at future-feed</a>.</p>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
+                    <a href="https://github.com/COS301-SE-2025/Future-Feed" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
                 </div>
             </div>
+              <div class="project-card">
+                <h3>Malicious URL Detection System</h3>
+                <p>A machine learning system built in Python using Scikit-learn and Pandas to detect phishing and malicious URLs. Implemented a modular OOP pipeline, feature extraction, Random Forest classification, and model persistence. Currently developing a Chrome extension for real-time URL protection.</p>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
+                    <a href="https://github.com/RethaMokoena/Malicious-Detection-System" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Real-Time Auction System</h3>
+                <p>A full-stack auction platform enabling live bidding using Node.js, Socket.io, PHP, and MySQL. Implemented real-time updates via WebSockets, automated auction state management, secure authentication, and a responsive user interface with HTML5, CSS3, and JavaScript.</p>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
+                    <a href="https://github.com/RethaMokoena/Auction-System" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+
+          
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <script src="script.js"></script>
 </body>

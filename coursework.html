@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursework - Rethabile Mokoena</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-code"></i>
+      <span class="logo-text">Rethabile Mokoena</span>
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="coursework.html" class="active">Coursework</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="coursework-section" id="coursework">
+    <h2 class="section-title">Coursework</h2>
+    <p class="intro">Key modules that shaped my expertise in computer science and software development.</p>
+
+    <div class="course-grid">
+
+      <div class="course-card fade-in">
+        <i class="fas fa-database icon"></i>
+        <h3>Database Systems</h3>
+        <p>Designed and optimized relational and NoSQL databases. Implemented queries, transactions, and schema design using PostgreSQL and MongoDB.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-code-branch icon"></i>
+        <h3>Data Structures & Algorithms</h3>
+        <p>Mastered algorithmic design and analysis, including sorting, searching, recursion, and graph algorithms. Implemented efficient data structures in Java and C++.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-microchip icon"></i>
+        <h3>Computer Architecture</h3>
+        <p>Learned how processors, memory, and I/O systems interact at a low level. Built simulations of instruction cycles and assembly-level operations.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-cogs icon"></i>
+        <h3>Operating Systems</h3>
+        <p>Developed low-level process and memory management simulations. Gained hands-on experience in concurrency, scheduling, and file systems using C and Linux.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-project-diagram icon"></i>
+        <h3>Software Engineering</h3>
+        <p>Applied object-oriented principles and agile methodologies to team projects. Designed scalable full-stack systems using Spring Boot and React.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-network-wired icon"></i>
+        <h3>Computer Networks</h3>
+        <p>Built networking applications using socket programming and REST APIs. Studied TCP/IP, routing, and security protocols relevant to modern distributed systems.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-robot icon"></i>
+        <h3>Artificial Intelligence</h3>
+        <p>This module provided a comprehensive overview of artificial intelligence, where I gained hands-on experience in implementing core AI techniques, including the development of a functional neural network, the creation of a genetic algorithm for optimization, and the programming of game-playing agents using advanced search strategies like game trees.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-laptop-code icon"></i>
+        <h3>Object-Oriented Programming (OOP)</h3>
+        <p>Developed modular, reusable software using Java and C++. Mastered inheritance, polymorphism, and design patterns in real-world applications.</p>
+      </div>
+
+      <div class="course-card fade-in">
+        <i class="fas fa-drafting-compass icon"></i>
+        <h3>COS 214 — Software Modelling</h3>
+        <p>Applied software design and modelling techniques using UML, design patterns, and abstraction principles. Focused on building maintainable, extensible architectures.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rethabile Mokoena | Built with ❤️ using HTML, CSS, and JS</p>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.fade-in');
+
+    const revealOnScroll = () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
